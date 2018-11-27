@@ -1,4 +1,4 @@
-FROM continuumio/anaconda3:5.2.0
+FROM continuumio/anaconda3:5.3.0
 
 RUN conda install jupyter -y
 
