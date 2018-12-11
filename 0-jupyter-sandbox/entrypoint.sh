@@ -7,10 +7,10 @@ case "$CMD" in
     exec /usr/bin/env bash
     ;;
   * )
-    exec jupyter notebook              \
-      --port=8888                      \
-      --no-browser                     \
-      --ip=0.0.0.0                     \
-      --notebook-dir=/home/toast       \
+    exec jupyter notebook                   \
+      --port=8888                           \
+      --no-browser                          \
+      --ip=0.0.0.0                          \
+      --notebook-dir=/home/toast/notebooks  \
     ;;
 esac
