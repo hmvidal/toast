@@ -1,5 +1,7 @@
 FROM continuumio/anaconda3:5.3.0
 
+RUN apt-get update \
+ && apt-get install -y fonts-humor-sans
 RUN conda install jupyter -y
 
 COPY entrypoint.sh /opt/toast/
