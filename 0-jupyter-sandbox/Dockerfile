@@ -11,7 +11,8 @@ RUN chown toast:toast /opt/toast/* \
 RUN apt-get update \
  && apt-get install -y \
       fonts-humor-sans \
-      plantuml
+      plantuml \
+ && apt-get clean
 
 RUN conda update --all \
  && conda install jupyter -y
