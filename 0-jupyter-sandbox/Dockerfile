@@ -13,9 +13,6 @@ RUN apt-get update \
       fonts-humor-sans \
       plantuml
 
-RUN pip install --upgrade pip \
- && pip install PyHamcrest iplantuml
-
 RUN conda update --all \
  && conda install jupyter -y
 
