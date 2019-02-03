@@ -17,6 +17,9 @@ RUN apt-get update \
 RUN conda update --all \
  && conda install jupyter -y
 
+RUN pip install PyHamcrest iplantuml
+
+
 USER toast
 WORKDIR /opt/toast
 EXPOSE 8888
