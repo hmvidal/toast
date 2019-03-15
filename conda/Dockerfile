@@ -15,6 +15,5 @@ RUN conda update --all
 
 USER toast
 WORKDIR /opt/toast
-EXPOSE 8888
 ENTRYPOINT ["./entrypoint.sh"]
 
