@@ -1,4 +1,4 @@
-FROM continuumio/anaconda3:5.3.0
+FROM continuumio/anaconda3:2019.10
 
 RUN useradd -d /home/toast -ms /bin/bash toast \
  && mkdir /opt/toast
@@ -11,7 +11,7 @@ RUN chown toast:toast /opt/toast/* \
 RUN apt-get update \
  && apt-get clean
 
-RUN conda update --all
+RUN conda update --all -y
 
 USER toast
 WORKDIR /opt/toast
