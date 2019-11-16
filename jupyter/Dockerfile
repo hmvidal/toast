@@ -17,7 +17,7 @@ RUN apt-get update -y \
       plantuml \
  && apt-get clean
 
-RUN conda update --all \
+RUN conda update --all -y \
  && conda install jupyter -y
 
 RUN pip install PyHamcrest iplantuml folium
