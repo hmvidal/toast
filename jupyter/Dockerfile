@@ -1,4 +1,4 @@
-FROM continuumio/anaconda3:5.3.0
+FROM continuumio/anaconda3:2019.10
 
 RUN useradd -d /home/toast -ms /bin/bash toast \
  && mkdir /opt/toast
