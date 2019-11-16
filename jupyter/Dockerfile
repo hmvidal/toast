@@ -20,7 +20,9 @@ RUN apt-get update -y \
 RUN conda update --all -y \
  && conda install jupyter -y
 
-RUN pip install PyHamcrest iplantuml folium
+RUN pip install PyHamcrest iplantuml folium spacy nltk
+
+RUN python -m spacy download en
 
 
 USER toast
