@@ -8,7 +8,10 @@ COPY entrypoint.sh /opt/toast/
 RUN chown toast:toast /opt/toast/* \
  && chmod 700 /opt/toast/entrypoint.sh
 
-RUN apt-get update \
+# To solve weird java circular dependency issue
+RUN mkdir -p /usr/share/man/man1
+
+RUN apt-get update -y \
  && apt-get install -y \
       fonts-humor-sans \
       plantuml \
